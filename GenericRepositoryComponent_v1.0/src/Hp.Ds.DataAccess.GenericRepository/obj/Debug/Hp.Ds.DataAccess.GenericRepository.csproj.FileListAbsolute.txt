@@ -1,0 +1,9 @@
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\obj\Debug\Hp.Ds.DataAccess.GenericRepository.csprojResolveAssemblyReference.cache
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\Hp.Ds.DataAccess.GenericRepository.dll.config
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\Hp.Ds.DataAccess.GenericRepository.dll
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\Hp.Ds.DataAccess.GenericRepository.pdb
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\EntityFramework.dll
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\LinqKit.dll
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\bin\Debug\EntityFramework.xml
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\obj\Debug\Hp.Ds.DataAccess.GenericRepository.dll
+C:\Users\bandaca\Documents\Projects\WebAppArchitectureDemo\Hp.Ds.DataAccess.GenericRepository\obj\Debug\Hp.Ds.DataAccess.GenericRepository.pdb
