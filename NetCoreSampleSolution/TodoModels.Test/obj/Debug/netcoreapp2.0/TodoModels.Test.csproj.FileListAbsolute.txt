@@ -1,0 +1,17 @@
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.Test.deps.json
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.Test.runtimeconfig.json
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.Test.runtimeconfig.dev.json
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.Test.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.Test.pdb
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\obj\Debug\netcoreapp2.0\TodoModels.Test.csproj.CoreCompileInputs.cache
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\obj\Debug\netcoreapp2.0\TodoModels.Test.AssemblyInfoInputs.cache
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\obj\Debug\netcoreapp2.0\TodoModels.Test.AssemblyInfo.cs
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\obj\Debug\netcoreapp2.0\TodoModels.Test.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\obj\Debug\netcoreapp2.0\TodoModels.Test.pdb
+C:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoApi.dll
+C:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.dll
+C:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoModels.pdb
+C:\Projects\programming\NetCoreSampleSolution\TodoModels.Test\bin\Debug\netcoreapp2.0\TodoApi.pdb

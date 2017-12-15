@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of todoItems">
+    <a routerLink="/todo-list/{{item.id}}"><span>{{item.id}} - </span>{{item.name}}</a>
+  </li>
+</ul>
+
+<!--<app-todo-item [todoItem]="selectedItem"></app-todo-item>-->

@@ -1,0 +1,6 @@
+https://www.codeproject.com/Articles/1206306/Integrating-ASP-Net-Core-and-Angular-project
+Angulat 4 - https://angular.io/tutorial
+Enable CORS in WebAPI - https://docs.microsoft.com/en-us/aspnet/core/security/cors
+https://medium.com/@cabot_solutions/a-comprehensive-guide-to-creating-an-app-with-net-core-using-mvc-6-and-angularjs-2-ce3935a3fe3b
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-vsc
+https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test

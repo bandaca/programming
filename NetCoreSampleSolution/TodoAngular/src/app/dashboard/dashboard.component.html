@@ -1,0 +1,12 @@
+<div>
+  <h2>Completed Tasks</h2>
+  <ul>
+    <li *ngFor="let item of todoItems">
+      <a routerLink="/todo-list/{{item.id}}">
+        <div><span>Id:</span>{{item.id}}</div>
+        <div><span>Name:</span>{{item.name}}</div>
+        <div><span>Is Complete:</span>{{item.isComplete}}</div>
+      </a>
+    </li>
+  </ul>
+</div>

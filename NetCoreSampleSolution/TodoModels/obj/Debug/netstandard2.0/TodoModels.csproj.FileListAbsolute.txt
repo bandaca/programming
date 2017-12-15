@@ -1,0 +1,8 @@
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\obj\Debug\netstandard2.0\TodoModels.csproj.CoreCompileInputs.cache
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\obj\Debug\netstandard2.0\TodoModels.AssemblyInfoInputs.cache
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\obj\Debug\netstandard2.0\TodoModels.AssemblyInfo.cs
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\bin\Debug\netstandard2.0\TodoModels.deps.json
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\bin\Debug\netstandard2.0\TodoModels.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\bin\Debug\netstandard2.0\TodoModels.pdb
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\obj\Debug\netstandard2.0\TodoModels.dll
+c:\Projects\programming\NetCoreSampleSolution\TodoModels\obj\Debug\netstandard2.0\TodoModels.pdb
