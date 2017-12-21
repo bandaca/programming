@@ -5,9 +5,6 @@ import { Observable } from 'rxjs/Rx';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
 
-// Import RxJs required methods
-//import 'rxjs/add/operator/map';
-//import 'rxjs/add/operator/catch';
 import { TodoItem } from './todo-item';
 import { TODOITEMS } from './todo-items-mock';
 import { MessageService } from './message.service';
@@ -15,25 +12,54 @@ import { MessageService } from './message.service';
 @Injectable()
 export class TodoListService {
   private todoApiUrl = 'http://localhost:5000/api/todo';
+  
+
   constructor(private _http: HttpClient, private _messages: MessageService) { }
 
   getAllItems(): Observable<TodoItem[]> {
-    this.log("fetched todo items");
     return this._http.get<TodoItem[]>(this.todoApiUrl)
-      .pipe(catchError(this.handleError('getAllItems',[])));;
-    //return of(TODOITEMS);
+      .pipe(
+        tap(todoItems => this.log("Fetched todo items")),
+        catchError(this.handleError('getAllItems',[]))
+    );
   }
 
   getTodoItem(id: number): Observable<TodoItem> {
-    this.log(`fetched item with id=${id}`);
-    return this._http.get<TodoItem>(`${this.todoApiUrl}/${id}`);
+    //this.log(`fetched item with id=${id}`);
+    return this._http.get<TodoItem>(`${this.todoApiUrl}/${id}`)
+    .pipe(
+      tap(_=>this.log(`fetched item with id=${id}`)),
+      catchError(this.handleError<TodoItem>('getTodoItem'))
+    );
     //return of(TODOITEMS.find(item => item.id === id));
   }
 
   getItemByStatus(completed: boolean): Observable<TodoItem[]> {
-    this.log("fetched todo items where 'Is Completed' is " + completed);
-    return this._http.get<TodoItem[]>(`${this.todoApiUrl}?status=${completed}`);
+    return this._http.get<TodoItem[]>(`${this.todoApiUrl}?status=${completed}`)
+    .pipe(
+      tap(_=>this.log(`Fetched TODO items where 'Is Completed' is ${completed}`)),
+      catchError(this.handleError("getItemByStatus",[]))
+    );
     //return of(TODOITEMS.filter(item => item.isComplete === completed));
+  }
+
+  searchItem(term:string): Observable<TodoItem[]>{
+    return this._http.get<TodoItem[]> (`${this.todoApiUrl}?name=${term}`)
+    .pipe(
+      tap(_=>this.log(`Fetched TODO items where 'Name' contains ${term}`)),
+      catchError(this.handleError("searchItem",[]))
+    );
+  }
+
+  add(item:TodoItem): Observable<TodoItem>{
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this._http.post<TodoItem>(this.todoApiUrl,item,httpOptions)
+    .pipe(
+      tap(_=>this.log(`Saved Todo Item`)),
+      catchError(this.handleError<TodoItem>("add"))
+    );
   }
 
   private log(message: string) {

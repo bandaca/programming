@@ -1,0 +1,7 @@
+node_modules/rxjs/Observable.d.ts(58,60): error TS2693: 'Promise' only refers to a type, but is being used as a value here.
+node_modules/rxjs/Observable.d.ts(73,59): error TS2693: 'Promise' only refers to a type, but is being used as a value here.
+
+Solution:
+npm i --save-dev  @types/es6-promise
+
+https://stackoverflow.com/questions/43119163/typescript-error-ts2693-promise-only-refers-to-a-type-but-is-being-used-as/43122423

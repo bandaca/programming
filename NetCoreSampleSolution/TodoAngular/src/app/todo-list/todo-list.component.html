@@ -1,7 +1,21 @@
-<ul>
-  <li *ngFor="let item of todoItems">
-    <a routerLink="/todo-list/{{item.id}}"><span>{{item.id}} - </span>{{item.name}}</a>
-  </li>
-</ul>
-
-<!--<app-todo-item [todoItem]="selectedItem"></app-todo-item>-->
+<div>
+    <div>
+        <label>Name:</label>
+        <input [(ngModel)]="newItem.name" placeholder="name">
+      </div>
+      <div>
+        <span>Is Complete:</span> {{newItem.isComplete}}
+      </div>
+      <div>
+        <button (click)="save(newItem)">Save</button>
+      </div>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let item of todoItems">
+      <a routerLink="/todo-list/{{item.id}}">
+        <span>{{item.id}} - </span>{{item.name}}</a>
+    </li>
+    <!--<app-todo-item [todoItem]="selectedItem"></app-todo-item>-->
+  </ul>
+</div>

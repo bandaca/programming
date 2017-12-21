@@ -1,0 +1,12 @@
+<div id="find-item-component">
+  <div>
+    Search Item: <input type="text" #searchText id="search-text" (keyup)="search(searchText.value)"/>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let item of todoItems$ | async">
+          <a routerLink="/todo-list/{{item.id}}"><span>{{item.id}} - </span>{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

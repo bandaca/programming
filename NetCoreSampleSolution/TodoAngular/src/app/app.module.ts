@@ -14,6 +14,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FindItemsComponent } from './find-items/find-items.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     TodoListComponent,
     TodoItemComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    FindItemsComponent
   ],
   imports: [
     BrowserModule,

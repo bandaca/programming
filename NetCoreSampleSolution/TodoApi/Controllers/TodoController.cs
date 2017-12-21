@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Todo.Models;
@@ -22,13 +23,18 @@ namespace TodoApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<TodoItem> GetAll(bool? status)
+        public IEnumerable<TodoItem> GetAll(bool? status,string name)
         {
 
             if(status != null){
                 return (from item in _context.TodoItems
                             where (item.IsComplete == status)
                             select item).ToList();
+            }
+            if(!string.IsNullOrEmpty(name)){
+                return (from item in _context.TodoItems
+                            where (item.Name.IndexOf(name, StringComparison.OrdinalIgnoreCase)>=0)
+                            select item).ToList();  
             }
             return _context.TodoItems.ToList();
         }
