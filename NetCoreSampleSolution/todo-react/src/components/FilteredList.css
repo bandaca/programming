@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0;
+    background-color: #bbbbbb;
+}
+
+.button:hover {
+    box-shadow: 0 4px #990000;
+    background-color: #ee2222;
+    transition: 0.5s;
+}
