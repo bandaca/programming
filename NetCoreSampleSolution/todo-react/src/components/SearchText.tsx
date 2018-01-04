@@ -1,23 +1,23 @@
 import * as React from 'react';
-import { ItextChangeCallback } from '../EventInterfaces';
 
 export interface Props {
-    value: string;
-    onUserInput: ItextChangeCallback;
+    text: string;
+    onTextChanged: (text: string) => void;
 }
 
-class SearchText extends React.Component<Props, object> {
-    onTextChanged(e: React.SyntheticEvent<HTMLInputElement>) {
-        this.props.onUserInput(e);
-    }
-
-    render() {
-        return (
-            <div>
-                Search Item: <input type="search" value={this.props.value} onChange={this.onTextChanged.bind(this)} />
-            </div>
-        );
-    }
+const SearchText = ({ text, onTextChanged }: Props) => {
+    return (
+        <div>
+            Search Item:
+                <input type="search"
+                value={text}
+                onChange={e => {
+                            onTextChanged(e.target.value);
+                        }
+                }
+            />
+        </div>
+    );
 }
 
 export default SearchText;

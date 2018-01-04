@@ -1,32 +1,29 @@
 import * as React from 'react';
 import { Item } from '../models/Item';
-import { IitemsCallbacks } from '../EventInterfaces';
+//import { IitemsCallbacks } from '../EventInterfaces';
 
 export interface Props {
     itemIndex: number;
     displayItem: Item;
-    itemsCallbacks: IitemsCallbacks;
+    onDeleteItem : (index:number) => void;
+    //itemsCallbacks: IitemsCallbacks;
 }
 
-class DisplayItem extends React.Component<Props, object> {
-    render() {
-        return (
-            <li key={this.props.displayItem.id}>
-                <a 
-                    href="#" 
-                    onClick={
-                                this.props.itemsCallbacks.delete.bind(
-                                                                        null,
-                                                                        this.props.displayItem.id,
-                                                                        this.props.itemIndex
-                                                                    )
-                            }
-                >
-                    {this.props.displayItem.name}
-                </a>
-            </li>
-        );
-    }
+function DisplayItem({itemIndex, displayItem, onDeleteItem}:Props) {
+    return (
+        <li key={displayItem.id}>
+            <a 
+                href="#" 
+                onClick={ e => {
+                                    e.preventDefault();
+                                    onDeleteItem(itemIndex)
+                                } 
+                        }
+            >
+                {displayItem.name}
+            </a>
+        </li>
+    );
 }
 
 export default DisplayItem;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import 'whatwg-fetch';
 import { Item } from '../models/Item';
-import FilteredList from './FilteredList';
+//import FilteredList from './FilteredList';
 import update from 'immutability-helper';
 
 export interface StateProps {
@@ -53,7 +53,7 @@ class TodoListContainer extends React.Component<object, StateProps> {
 
     render() {
         return (
-            <FilteredList 
+            /*<FilteredList 
                 ItemsList={this.state.items}
                 ItemCallbacks={
                     { 
@@ -61,7 +61,8 @@ class TodoListContainer extends React.Component<object, StateProps> {
                         delete: (id: number, index: number) => this.deleteItem(id, index)
                     }
                 } 
-            />
+            />*/
+            <div/>
         );
     }
 }
