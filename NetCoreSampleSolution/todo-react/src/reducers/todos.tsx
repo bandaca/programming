@@ -1,6 +1,6 @@
 import { TodoAction } from '../actions/index';
 import {Item} from '../models/Item';
-import { ADD_ITEM, TOGGLE_COMPLETE, DELETE_ITEM } from '../types/index';
+import { ADD_ITEM, TOGGLE_COMPLETE, DELETE_ITEM, GET_TODO_ITEMS, RESPONSE_GET_TODO_ITEMS } from '../types/index';
 import update from 'immutability-helper';
 
 export function todos(state:Item[] = [], action:TodoAction):Item[] {
@@ -23,6 +23,10 @@ export function todos(state:Item[] = [], action:TodoAction):Item[] {
                 }
                 return item;
             });
+        case GET_TODO_ITEMS:
+            return state;
+        case RESPONSE_GET_TODO_ITEMS:
+            return action.items;
         default:
             return state;
     }
