@@ -39,9 +39,13 @@ export interface ResponseGetTodoItems{
     items: Item[];
 }
 
+export interface Login{
+    type:types.LOGIN;
+}
+
 
 //ACTIONS TYPE
-export type TodoAction = AddItem | ToggleComplete | SetVisibilityFilter | DeleteItem | SetTextFilter | GetTodoItems | ResponseGetTodoItems;
+export type TodoAction = AddItem | ToggleComplete | SetVisibilityFilter | DeleteItem | SetTextFilter | GetTodoItems | ResponseGetTodoItems | Login;
 
 //ACTION CREATORS
 export function addItem(text:string):AddItem {
@@ -85,6 +89,7 @@ export const ResponseGetTodoItems = (items:Item[]) =>({
     type:types.RESPONSE_GET_TODO_ITEMS,
     items
 });
+export const Login = () => ({type:types.LOGIN});
 
 const TODO_API_URL = 'http://localhost:5000/api/todo';
     

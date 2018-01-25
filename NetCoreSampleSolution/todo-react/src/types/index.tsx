@@ -34,3 +34,6 @@ export type GET_TODO_ITEMS = typeof GET_TODO_ITEMS;
 
 export const RESPONSE_GET_TODO_ITEMS = 'RESPONSE_GET_TODO_ITEMS';
 export type RESPONSE_GET_TODO_ITEMS = typeof RESPONSE_GET_TODO_ITEMS;
+
+export const LOGIN = 'LOGIN';
+export type LOGIN = typeof LOGIN;

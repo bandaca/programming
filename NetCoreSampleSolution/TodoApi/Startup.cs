@@ -39,7 +39,7 @@ namespace TodoApi
             }
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseCors(builder => builder.WithOrigins("http://localhost:4200","http://localhost:3000")
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200","http://localhost:3000","http://localhost")
             .AllowAnyHeader()
             .AllowAnyMethod());
             app.UseMvc();

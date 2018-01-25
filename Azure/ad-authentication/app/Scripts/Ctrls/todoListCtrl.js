@@ -24,7 +24,7 @@
             // Get TodoList Data
             $.ajax({
                 type: "GET",
-                url: "/api/TodoList",
+                url: "http://localhost:5000/api/todo",
                 headers: {
                     'Authorization': 'Bearer ' + token,
                 },
@@ -75,7 +75,7 @@
                 // Delete the Todo
                 $.ajax({
                     type: "DELETE",
-                    url: "/api/TodoList/" + todoId,
+                    url: "http://localhost:5000/api/todo/" + todoId,
                     headers: {
                         'Authorization': 'Bearer ' + token,
                     },
@@ -138,7 +138,7 @@
                 // Update Todo Item
                 $.ajax({
                     type: "PUT",
-                    url: "/api/TodoList",
+                    url: "http://localhost:5000/api/todo",
                     headers: {
                         'Authorization': 'Bearer ' + token,
                     },
@@ -184,7 +184,7 @@
                 // POST a New Todo
                 $.ajax({
                     type: "POST",
-                    url: "/api/TodoList",
+                    url: "http://localhost:5000/api/todo",
                     headers: {
                         'Authorization': 'Bearer ' + token,
                     },
