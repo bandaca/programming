@@ -17,7 +17,7 @@ export class CookieManager extends Component {
 
   setCookie (name, value) {
     document.cookie = name + "=" + value + ";path=/";
-    window.location.replace("https://my-dev-store-544280745.store.bcdev/admin/services/3p-auth/v1/store/10000207/auth/cloverstaging/initiate?redirect=/admin/payments/clover/config/setup");
+    window.location.replace("store");
   }
 
   getCookie (cname) {
