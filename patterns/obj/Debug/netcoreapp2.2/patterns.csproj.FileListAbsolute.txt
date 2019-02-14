@@ -1,0 +1,11 @@
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.csprojAssemblyReference.cache
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.csproj.CoreCompileInputs.cache
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.AssemblyInfoInputs.cache
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.AssemblyInfo.cs
+/Users/cbanda/Projects/programming/patterns/bin/Debug/netcoreapp2.2/patterns.deps.json
+/Users/cbanda/Projects/programming/patterns/bin/Debug/netcoreapp2.2/patterns.runtimeconfig.json
+/Users/cbanda/Projects/programming/patterns/bin/Debug/netcoreapp2.2/patterns.runtimeconfig.dev.json
+/Users/cbanda/Projects/programming/patterns/bin/Debug/netcoreapp2.2/patterns.dll
+/Users/cbanda/Projects/programming/patterns/bin/Debug/netcoreapp2.2/patterns.pdb
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.dll
+/Users/cbanda/Projects/programming/patterns/obj/Debug/netcoreapp2.2/patterns.pdb
